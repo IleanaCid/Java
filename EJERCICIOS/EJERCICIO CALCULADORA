@@ -1,0 +1,37 @@
+
+ public class Calculadora{//nombre de la claase
+ //ATRIBUTOS
+   int num1=0, num2=0, resultado=0;
+    Scanner in = new Scanner (System.in);
+    //metodo para pedir datos
+    
+    public void leerDatos(){
+      System.out.printInt("*Ingresa el primer numero*");
+      num1 = in.nextInt();
+      System.out.printInt("*Ingresa el segundo numero*");
+      num2 = in.nextInt();
+    } 
+    //Método para mostrar datos
+    public void mostrarDatos(){
+       System.out.printInt("*El numero uno es:*"+ num1); 
+       System.out.printInt("*El numero dos es:*"+ num2);
+    }
+    
+    //metodo para sumar
+    public void sumar(){
+        resultado = num1+num2;
+        System.out.printInt("La suma de "+ num1+" + "+num2+" es"+resultado);
+    }
+    
+    //metodos para restar
+    public void restar(){
+        resultado = num1-num2;
+        System.out.printInt("La resta de"+num1 "-"+num2+" es "+resultado);
+    }
+    
+    public static void main(String[]args){
+        Calculadora calaculadora1=new Calculadora();
+        calculadora1.leerDatos();
+        
+    }
+}
